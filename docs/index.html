@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>multicore_sim — Multicore simulation for PLECS</title>
+  <meta name="description" content="Compile PLECS-generated C at runtime, run it across CPU cores, and inspect waveforms in a built-in GUI scope." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://api.github.com" />
+</head>
+<body>
+
+<!-- ────────────────────────────────────────────────── header -->
+<header class="ui-shell">
+  <a class="ui-shell__brand" href="#top">
+    <img src="assets/logo.png" alt="" />
+    <span><strong>multicore</strong>_sim</span>
+  </a>
+  <nav class="ui-shell__nav">
+    <a href="#features">Features</a>
+    <a href="#how">How&nbsp;it&nbsp;works</a>
+    <a href="#install">Install</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="ui-shell__actions">
+    <a class="iconlink" href="https://github.com/PCSL-git/multicore-sim" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M16 2a14 14 0 0 0-4.43 27.28c.7.13.96-.3.96-.67v-2.36c-3.89.85-4.71-1.88-4.71-1.88-.64-1.62-1.56-2.05-1.56-2.05-1.27-.87.1-.85.1-.85 1.4.1 2.14 1.44 2.14 1.44 1.25 2.14 3.28 1.52 4.08 1.16.13-.91.49-1.52.89-1.87-3.1-.36-6.36-1.55-6.36-6.91 0-1.53.55-2.78 1.44-3.76-.14-.36-.62-1.79.14-3.73 0 0 1.18-.38 3.86 1.43a13.32 13.32 0 0 1 7.04 0c2.68-1.81 3.86-1.43 3.86-1.43.76 1.94.28 3.37.14 3.73.9.98 1.44 2.23 1.44 3.76 0 5.38-3.27 6.55-6.39 6.9.5.43.94 1.27.94 2.55v3.78c0 .37.25.81.96.67A14 14 0 0 0 16 2"/></svg>
+    </a>
+    <button class="iconlink" id="theme-toggle" type="button" aria-label="Toggle color theme">
+      <svg class="theme-icon-dark" viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M13.5 4A12 12 0 0 0 16 28a12 12 0 0 0 11.74-9.5A10 10 0 0 1 13.5 4z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M16 22a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM15 2h2v4h-2zm0 24h2v4h-2zM2 15h4v2H2zm24 0h4v2h-4zM5.64 7.05L7.05 5.64 9.88 8.46 8.46 9.88zm16.46 16.47l1.41-1.41 2.83 2.82-1.42 1.42zM5.64 24.95l2.83-2.83 1.41 1.42-2.82 2.82zm16.46-16.47l2.82-2.83 1.42 1.41-2.82 2.83z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ────────────────────────────────────────────────── hero -->
+<section class="hero">
+  <div class="hero__copy">
+    <p class="eyebrow">— For Large-Scale Power Electronics Circuit</p>
+    <h1><span class="accent">Multicore simulation</span> <br/>for PLECS code-generated circuits.</h1>
+    <p class="lead">Compile PLECS-generated C at runtime. Distribute the model across CPU cores. Inspect waveforms in a built-in GUI scope — with signal triggers and capture.</p>
+    <div class="cta">
+      <a class="btn btn--primary" id="dl-primary" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
+        Download latest
+        <span class="btn__badge" id="dl-version">latest</span>
+        <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="#install">
+        Install guide
+        <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
+      </a>
+    </div>
+    <p class="meta-note">
+      <strong>Not real-time.</strong> &nbsp;multicore_sim is a multicore <em>simulation</em> tool — simulation speed depends on the model and the host computation power. It does not target deterministic real-time execution.
+    </p>
+  </div>
+
+  <figure class="hero__shot">
+    <img src="assets/screenshots/scope.svg" alt="multicore_sim GUI scope" />
+    <figcaption>fig.&nbsp;01 &nbsp;·&nbsp; GUI scope · placeholder · actual screenshot coming.</figcaption>
+  </figure>
+</section>
+
+<!-- ────────────────────────────────────────────────── features -->
+<section id="features" class="section">
+  <div class="section__head">
+    <p class="eyebrow">— What it does</p>
+    <h2>A desktop simulator that turns a PLECS code-generated model into a multicore simulation.</h2>
+  </div>
+
+  <ol class="tile-grid" start="01">
+    <li class="tile"><span class="tile__num">01</span><h3>Runtime C compile</h3><p>Open a PLECS codegen folder; the simulator builds runtime library for multicore acceleration</li>
+    <li class="tile"><span class="tile__num">02</span><h3>Multicore execution</h3><p>Spread the model across N worker cores. Per-core utilization is plotted so you can see where the load lands.</p></li>
+    <li class="tile"><span class="tile__num">03</span><h3>On-the-fly inputs</h3><p>Edit inputs (references, setpoints, load steps) and apply them while the simulation is running, without restarting.</p></li>
+    <li class="tile"><span class="tile__num">04</span><h3>Simnote sessions</h3><p>Save layout, signals, axis state, memo, preview, and lossless waveform traces in one <code>.simnote</code> archive. Reload anywhere.</p></li>
+  </ol>
+
+</section>
+
+<!-- ────────────────────────────────────────────────── how it works -->
+<section id="how" class="section section--alt">
+  <div class="section__head">
+    <p class="eyebrow">— How it works</p>
+    <h2>Four steps from a PLECS export to a running scope window.</h2>
+  </div>
+
+  <ol class="steps">
+    <li><span class="steps__num">01</span><h3>PLECS exports C</h3><p>PLECS code-generates the circuit model into portable C sources (<code>.c</code> / <code>.h</code>).</p></li>
+    <li><span class="steps__num">02</span><h3>Compile codes</h3><p>multicore_sim invokes <code>gcc</code> to build a shared library directly from the <code>codegen</code> folder, cached per machine.</p></li>
+    <li><span class="steps__num">03</span><h3>Run across cores</h3><p>In multicore mode, task instances defined in PLECS are assigned to individual cores and execute in sync with one another.</p></li>
+    <li><span class="steps__num">04</span><h3>Render to the scope</h3><p>The GUI samples data and plots them. The display refresh rate is independent of simulation speed.</p></li>
+  </ol>
+
+</section>
+
+<!-- ────────────────────────────────────────────────── install -->
+<section id="install" class="section">
+  <div class="section__head">
+    <p class="eyebrow">— Install</p>
+    <h2>A C compiler (gcc) is the only host-side requirement.</h2>
+    <p class="section__lead">Python is bundled into the installer — end users don't need it. The simulator JIT-compiles PLECS-generated C with the host's <code>gcc</code> at runtime.</p>
+  </div>
+
+  <div class="os-grid">
+    <article class="os">
+      <h3>macOS</h3>
+      <p class="os__desc">Apple Silicon &amp; Intel · self-signed <code>.dmg</code>.</p>
+      <p class="os__hint">Install Apple Clang (exposed as <code>gcc</code>):</p>
+      <pre><code>xcode-select --install</code></pre>
+      <a class="btn btn--primary btn--block" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
+        Download .dmg
+        <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
+      </a>
+      <p class="os__note">First launch: right-click → <strong>Open</strong>.</p>
+    </article>
+
+    <article class="os">
+      <h3>Windows</h3>
+      <p class="os__desc">Windows 10 / 11 · Inno Setup installer.</p>
+      <p class="os__hint">Install MSYS2, then MinGW-w64 gcc:</p>
+      <pre><code>pacman -S mingw-w64-x86_64-gcc</code></pre>
+      <a class="btn btn--primary btn--block" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
+        Download .exe
+        <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
+      </a>
+      <p class="os__note">SmartScreen: <strong>More info → Run anyway</strong>.</p>
+    </article>
+
+
+  </div>
+
+  <div class="quickstart">
+    <p class="eyebrow">— Quick start</p>
+    <h3>Five steps to first plot</h3>
+    <ol>
+      <li>Launch <code>multicore_sim</code>.</li>
+      <li><strong>Open Dir…</strong> → select your PLECS codegen folder.</li>
+      <li>Click <strong>Recompile</strong> if the cached library is missing.</li>
+      <li>Tick <strong>Multicore</strong>, then press <code>Play</code> button to start.</li>
+      <li>Edit inputs on the right panel.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ────────────────────────────────────────────────── FAQ -->
+<section id="faq" class="section section--alt">
+  <div class="section__head">
+    <p class="eyebrow">— FAQ</p>
+    <h2>Common questions.</h2>
+  </div>
+
+  <div class="accordion">
+    <details>
+      <summary>Is multicore_sim a real-time simulator?</summary>
+      <p>No. It is a multicore <em>simulation</em> tool — wall-clock progress depends on the model size and host hardware, and it does not target deterministic real-time execution. The 30–60 fps refresh you see in the GUI is a display rate, independent of simulation speed.</p>
+    </details>
+    <details>
+      <summary>Do I need Python installed?</summary>
+      <p>No. The shipped installers bundle Python via PyInstaller. End users only need a C compiler (gcc) on PATH.</p>
+    </details>
+    <details>
+      <summary>Why does the OS warn me when I open the app?</summary>
+      <p>Builds are self-signed, not notarized — the warning is normal. Approve once on first launch and it stops appearing.</p>
+    </details>
+    <details>
+      <summary>Can I use MSVC (cl.exe) on Windows instead of MinGW?</summary>
+      <p>No. The build pipeline expects gcc-style flags. Use MinGW-w64 via MSYS2 (or WinLibs / Chocolatey).</p>
+    </details>
+    <details>
+      <summary>I moved the codegen folder to another machine and the library won't load.</summary>
+      <p>PLECS-generated C is platform-specific. Click <strong>Recompile</strong> to rebuild the library on the new host.</p>
+    </details>
+    <details>
+      <summary>Is there a Linux .deb / .rpm?</summary>
+      <p>Not yet. We will provide it if requested in the future.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ────────────────────────────────────────────────── CTA band -->
+<section class="cta-band">
+  <div>
+    <p class="eyebrow eyebrow--inverse">— Get started</p>
+    <h2>Try it on your PLECS codegen folder.</h2>
+  </div>
+  <a class="btn btn--inverse" id="dl-secondary" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
+    Download latest
+    <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
+  </a>
+</section>
+
+</main>
+
+<!-- ────────────────────────────────────────────────── footer -->
+<footer class="foot">
+  <div class="foot__row">
+    <div class="foot__brand">
+      <img src="assets/logo.png" alt="" width="40" />
+      <p><strong>multicore</strong>_sim<br/><span>Multicore simulation for PLECS code-generated circuits.</span></p>
+    </div>
+
+    <div class="foot__cols">
+      <div>
+        <h4>Author</h4>
+        <a href="https://jaeyeonpark.kr" target="_blank" rel="noopener">Jaeyeon Park</a>
+        <a href="https://github.com/jaeyeon302" target="_blank" rel="noopener">github.com/jaeyeon302</a>
+      </div>
+      <div>
+        <h4>Project</h4>
+        <a href="https://github.com/PCSL-git/multicore-sim" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/PCSL-git/multicore-sim/releases" target="_blank" rel="noopener">Releases</a>
+      </div>
+      <div>
+        <h4>Organization</h4>
+        <a href="https://github.com/PCSL-git" target="_blank" rel="noopener">PCSL-git</a>
+      </div>
+    </div>
+  </div>
+  <p class="foot__legal">
+    © <span id="year">2026</span>&nbsp; Jaeyeon Park · Power Conversion Systems Lab. &nbsp;All rights reserved.
+  </p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

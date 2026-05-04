@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-label="GUI scope (placeholder)" font-family="IBM Plex Sans, -apple-system, sans-serif">
+  <rect width="1280" height="800" fill="#161616"/>
+
+  <!-- title bar -->
+  <rect x="0" y="0" width="1280" height="48" fill="#262626"/>
+  <rect x="0" y="47" width="1280" height="1" fill="#393939"/>
+  <circle cx="20" cy="24" r="5" fill="#525252"/>
+  <circle cx="36" cy="24" r="5" fill="#525252"/>
+  <circle cx="52" cy="24" r="5" fill="#525252"/>
+  <text x="80" y="29" font-size="13" fill="#a8a8a8" font-family="IBM Plex Mono, monospace">multicore_sim — plecs/mmc/mmc_hil_codegen</text>
+  <text x="1240" y="29" font-size="11" fill="#6f6f6f" text-anchor="end" font-family="IBM Plex Mono, monospace">v0.0.0</text>
+
+  <!-- toolbar -->
+  <rect x="0" y="48" width="1280" height="56" fill="#161616"/>
+  <rect x="0" y="103" width="1280" height="1" fill="#393939"/>
+  <g font-size="13" fill="#f4f4f4">
+    <rect x="16" y="62" width="120" height="32" fill="#0f62fe"/>
+    <text x="76" y="82" text-anchor="middle">▶  Play</text>
+    <rect x="144" y="62" width="100" height="32" fill="none" stroke="#525252"/>
+    <text x="194" y="82" text-anchor="middle" fill="#c6c6c6">↻  Reset</text>
+    <rect x="252" y="62" width="140" height="32" fill="none" stroke="#525252"/>
+    <text x="322" y="82" text-anchor="middle" fill="#c6c6c6">📁  Open Dir...</text>
+    <rect x="400" y="62" width="120" height="32" fill="none" stroke="#525252"/>
+    <text x="460" y="82" text-anchor="middle" fill="#c6c6c6">⚒  Recompile</text>
+    <rect x="544" y="62" width="100" height="32" fill="none" stroke="#525252"/>
+    <text x="594" y="82" text-anchor="middle" fill="#c6c6c6">☰  Multicore</text>
+  </g>
+
+  <!-- plot 1 -->
+  <rect x="16" y="120" width="900" height="300" fill="#262626"/>
+  <text x="32" y="142" font-size="11" fill="#a8a8a8" font-family="IBM Plex Mono, monospace">v_ac_a [V]</text>
+  <g stroke="#393939" stroke-width="1">
+    <line x1="16" y1="180" x2="916" y2="180"/>
+    <line x1="16" y1="240" x2="916" y2="240"/>
+    <line x1="16" y1="300" x2="916" y2="300"/>
+    <line x1="16" y1="360" x2="916" y2="360"/>
+    <line x1="166" y1="120" x2="166" y2="420"/>
+    <line x1="316" y1="120" x2="316" y2="420"/>
+    <line x1="466" y1="120" x2="466" y2="420"/>
+    <line x1="616" y1="120" x2="616" y2="420"/>
+    <line x1="766" y1="120" x2="766" y2="420"/>
+  </g>
+  <path d="M 26,270 Q 100,160 175,270 T 325,270 T 475,270 T 625,270 T 775,270 T 905,270" fill="none" stroke="#78a9ff" stroke-width="1.5"/>
+  <path d="M 26,280 Q 100,380 175,280 T 325,280 T 475,280 T 625,280 T 775,280 T 905,280" fill="none" stroke="#08bdba" stroke-width="1.5"/>
+  <line x1="616" y1="120" x2="616" y2="420" stroke="#f1c21b" stroke-dasharray="2 4" stroke-width="1"/>
+  <text x="622" y="138" font-size="10" fill="#f1c21b" font-family="IBM Plex Mono, monospace">▼ Trig ↑ 0.0</text>
+
+  <!-- plot 2 -->
+  <rect x="16" y="436" width="900" height="300" fill="#262626"/>
+  <text x="32" y="458" font-size="11" fill="#a8a8a8" font-family="IBM Plex Mono, monospace">i_load [A]</text>
+  <g stroke="#393939" stroke-width="1">
+    <line x1="16" y1="496" x2="916" y2="496"/>
+    <line x1="16" y1="556" x2="916" y2="556"/>
+    <line x1="16" y1="616" x2="916" y2="616"/>
+    <line x1="16" y1="676" x2="916" y2="676"/>
+    <line x1="166" y1="436" x2="166" y2="736"/>
+    <line x1="316" y1="436" x2="316" y2="736"/>
+    <line x1="466" y1="436" x2="466" y2="736"/>
+    <line x1="616" y1="436" x2="616" y2="736"/>
+    <line x1="766" y1="436" x2="766" y2="736"/>
+  </g>
+  <path d="M 26,596 L 76,580 L 126,612 L 176,560 L 226,620 L 276,580 L 326,604 L 376,564 L 426,616 L 476,580 L 526,608 L 576,560 L 626,620 L 676,580 L 726,604 L 776,564 L 826,616 L 876,584 L 905,592" fill="none" stroke="#ff7eb6" stroke-width="1.5"/>
+
+  <!-- right panel -->
+  <rect x="932" y="120" width="332" height="616" fill="#262626"/>
+  <text x="948" y="148" font-size="13" fill="#f4f4f4" font-weight="600">Input Signals · _U</text>
+  <line x1="948" y1="158" x2="1248" y2="158" stroke="#393939"/>
+  <g font-family="IBM Plex Mono, monospace">
+    <text x="948" y="186" font-size="11" fill="#a8a8a8">v_ref</text>
+    <rect x="948" y="194" width="300" height="28" fill="#161616"/>
+    <text x="958" y="214" font-size="13" fill="#78a9ff">100.0</text>
+    <text x="948" y="246" font-size="11" fill="#a8a8a8">freq_ref</text>
+    <rect x="948" y="254" width="300" height="28" fill="#161616"/>
+    <text x="958" y="274" font-size="13" fill="#78a9ff">60.0</text>
+    <text x="948" y="306" font-size="11" fill="#a8a8a8">i_d_ref</text>
+    <rect x="948" y="314" width="300" height="28" fill="#161616"/>
+    <text x="958" y="334" font-size="13" fill="#78a9ff">12.50</text>
+    <text x="948" y="366" font-size="11" fill="#a8a8a8">load_step</text>
+    <rect x="948" y="374" width="300" height="28" fill="#161616"/>
+    <text x="958" y="394" font-size="13" fill="#78a9ff">0</text>
+  </g>
+
+  <text x="948" y="438" font-size="13" fill="#f4f4f4" font-weight="600">Task Utilization</text>
+  <line x1="948" y1="448" x2="1248" y2="448" stroke="#393939"/>
+  <g font-family="IBM Plex Mono, monospace">
+    <text x="948" y="472" font-size="11" fill="#a8a8a8">core 0</text>
+    <rect x="948" y="478" width="300" height="14" fill="#161616"/>
+    <rect x="948" y="478" width="248" height="14" fill="#0f62fe"/>
+    <text x="1248" y="488" font-size="11" fill="#78a9ff" text-anchor="end">83%</text>
+
+    <text x="948" y="510" font-size="11" fill="#a8a8a8">core 1</text>
+    <rect x="948" y="516" width="300" height="14" fill="#161616"/>
+    <rect x="948" y="516" width="207" height="14" fill="#0f62fe"/>
+    <text x="1248" y="526" font-size="11" fill="#78a9ff" text-anchor="end">69%</text>
+
+    <text x="948" y="548" font-size="11" fill="#a8a8a8">core 2</text>
+    <rect x="948" y="554" width="300" height="14" fill="#161616"/>
+    <rect x="948" y="554" width="228" height="14" fill="#0f62fe"/>
+    <text x="1248" y="564" font-size="11" fill="#78a9ff" text-anchor="end">76%</text>
+
+    <text x="948" y="586" font-size="11" fill="#a8a8a8">core 3</text>
+    <rect x="948" y="592" width="300" height="14" fill="#161616"/>
+    <rect x="948" y="592" width="177" height="14" fill="#0f62fe"/>
+    <text x="1248" y="602" font-size="11" fill="#78a9ff" text-anchor="end">59%</text>
+  </g>
+
+  <text x="948" y="710" font-size="11" fill="#6f6f6f" font-family="IBM Plex Mono, monospace">window 50ms · decim auto · 4 cores · GPU plot</text>
+
+  <!-- placeholder watermark -->
+  <text x="640" y="772" font-size="10" fill="#525252" text-anchor="middle" font-family="IBM Plex Mono, monospace" letter-spacing="2">— PLACEHOLDER · REPLACE WITH REAL CAPTURE —</text>
+</svg>

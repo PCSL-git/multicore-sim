@@ -1,0 +1,72 @@
+multicore_sim — Proprietary License
+
+Copyright (c) 2026 Jaeyeon Park / Power Conversion Systems Lab (PCSL).
+All rights reserved.
+
+This software, including all binaries, installers, source files, assets,
+documentation, and any accompanying materials distributed in this repository
+(collectively, the "Software"), is the proprietary, copyrighted property of
+the copyright holder.
+
+NO LICENSE GRANTED BY DEFAULT
+-----------------------------
+No license, express or implied, is granted by mere access to or download of
+the Software. Use, reproduction, modification, redistribution, public
+display, sublicensing, or any commercial exploitation of the Software is
+PROHIBITED without a separate, written license agreement signed by the
+copyright holder.
+
+Specifically, the following are NOT permitted without prior written consent:
+
+  - Redistribution of the Software (binaries or sources) in any form.
+  - Reverse engineering, disassembly, or decompilation of the Software,
+    except to the limited extent that applicable law expressly permits
+    such activity notwithstanding this restriction.
+  - Removal or alteration of any copyright, trademark, or other proprietary
+    notices.
+  - Use of the Software to develop a competing product or service.
+  - Use of the Software in safety-critical, life-critical, or
+    mission-critical systems.
+
+EVALUATION USE
+--------------
+Where a build is explicitly published as an evaluation or trial release,
+the copyright holder grants a limited, non-exclusive, non-transferable,
+revocable license to install and run the Software on a single host for
+the purpose of internal evaluation only, subject to any time limits or
+feature limits enforced by the Software's licensing system. Evaluation
+use does not grant any right to redistribute the Software or to use it
+in production.
+
+COMMERCIAL USE
+--------------
+Commercial, academic-publication, or production use requires a paid
+commercial license issued by the copyright holder. Contact the author
+to request a quote or license agreement.
+
+NO WARRANTY
+-----------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+THIRD-PARTY COMPONENTS
+----------------------
+The Software may include third-party open-source components, each governed
+by its own license. The complete list of such components and their
+respective license texts is provided in the file `THIRD_PARTY_LICENSES.txt`
+shipped with the installer. Nothing in this license shall be construed to
+restrict any rights granted to you by those third-party licenses with
+respect to the corresponding third-party components.
+
+CONTACT
+-------
+Jaeyeon Park
+Power Conversion Systems Lab (PCSL)
+Web:    https://jaeyeonpark.kr
+GitHub: https://github.com/jaeyeon302
+Org:    https://github.com/PCSL-git
