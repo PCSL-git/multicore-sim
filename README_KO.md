@@ -19,7 +19,7 @@ PLECS Codegen 시뮬레이션을 위한 멀티코어 시뮬레이터.
 
 이 저장소는 Release build만 Hosting 하고 있습니다.
 프로그램 구입 및 이용 문의는 아래 연락처로 연락주세요.  
-최성휘 (Shenghui Cui) — 부교수 (Associate Professor) : cuish@snu.ac.kr  
+최성휘 (Shenghui Cui) — 교수 (Professor) : cuish@snu.ac.kr  
 박재연 (Jaeyeon Park) — 개발자 / 박사과정 (Developer / Ph.D Student) : ok6530@snu.ac.kr, jaeyeonparc@icloud.com
 
 
