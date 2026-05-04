@@ -124,6 +124,19 @@ code {
   border-radius: 0;
 }
 
+/* Inline product-name treatment — IBM Plex Mono only, no chip */
+code.brand-mono,
+.brand-mono {
+  font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.95em;
+  font-weight: 500;
+  background: transparent;
+  padding: 0;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+.cta-band .brand-mono { color: var(--inverse-text); }
+
 pre {
   margin: 0;
   padding: var(--sp-05);
@@ -309,7 +322,15 @@ h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.32px; text-transfor
   margin: 0;
   max-width: 560px;
 }
+.meta-note p { margin: 0; }
+.meta-note p + p {
+  margin-top: var(--sp-04);
+  padding-top: var(--sp-04);
+  border-top: 1px solid var(--border-subtle);
+}
 .meta-note strong { color: var(--text-primary); }
+.meta-note a { color: var(--text-primary); border-bottom: 1px solid currentColor; }
+.meta-note a:hover { color: var(--accent); }
 
 .hero__inquiry {
   font-size: 0.875rem;

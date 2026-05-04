@@ -27,6 +27,8 @@ PLECS Codegen 시뮬레이션을 위한 멀티코어 시뮬레이터.
 
 > **참고** — multicore_sim 은 실시간 (real-time) 시뮬레이터가 *아닙니다*. 시뮬레이션 진행 속도는 모델과 호스트 성능에 따라 달라집니다.
 
+> **PLECS / PLECS Coder 라이선스는 포함되어 있지 않습니다.** multicore_sim 은 **PLECS Coder** 가 생성한 C 코드를 실행합니다. **PLECS** 및 **PLECS Coder** 라이선스는 [Plexim](https://www.plexim.com/) 에서 별도로 구매하셔야 합니다. multicore_sim 은 어떠한 PLECS 라이선스도 포함하거나 부여하지 않습니다.
+
 ## 다운로드
 
 OS 에 맞는 인스톨러를 [Releases 페이지](https://github.com/PCSL-git/multicore-sim/releases/latest) 에서 받으세요.
@@ -43,7 +45,7 @@ OS 에 맞는 인스톨러를 [Releases 페이지](https://github.com/PCSL-git/m
 | OS | 설치 |
 | --- | --- |
 | macOS | `xcode-select --install` — Apple Clang 이 `gcc` 명령으로 노출됩니다. 또는 GNU GCC 가 필요하면 `brew install gcc`. |
-| Windows | [MSYS2](https://www.msys2.org/) 설치 후 **MSYS2 MinGW64** 셸에서 `pacman -S mingw-w64-x86_64-gcc` 실행, 그리고 시스템 `PATH` 에 `C:\msys64\mingw64\bin` 추가. (대안: [WinLibs](https://winlibs.com/).) |
+| Windows | [MSYS2](https://www.msys2.org/) 설치 후 **MSYS2 MinGW64** 셸에서 `pacman -S mingw-w64-x86_64-gcc` 실행, 그리고 시스템 `PATH` 에 `C:\msys64\mingw64\bin` 추가. |
 
 `gcc --version` 으로 설치 확인. 자세한 내용은 [웹사이트](https://pcsl-git.github.io/multicore-sim/#install) 참고.
 
