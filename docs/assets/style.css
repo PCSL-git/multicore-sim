@@ -311,6 +311,87 @@ h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.32px; text-transfor
 }
 .meta-note strong { color: var(--text-primary); }
 
+.hero__inquiry {
+  font-size: 0.875rem;
+  color: var(--text-helper);
+  margin: 0 0 var(--sp-06);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.hero__inquiry a {
+  color: var(--accent);
+  font-weight: 500;
+  margin-left: 4px;
+  border-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero__inquiry a:hover {
+  color: var(--accent-hover);
+  border-bottom: 1px solid currentColor;
+}
+.hero__inquiry svg { transition: transform var(--duration-fast) var(--easing); }
+.hero__inquiry a:hover svg { transform: translateX(2px); }
+
+/* ─── Licensing section: contact tiles ─── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1px;
+  background: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+}
+.contact {
+  background: var(--layer-02);
+  padding: var(--sp-08) var(--sp-07);
+  display: flex;
+  flex-direction: column;
+}
+.section--alt .contact { background: var(--bg); }
+.contact .eyebrow { margin-bottom: var(--sp-04); }
+.contact h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.005em;
+  margin: 0 0 var(--sp-04);
+}
+.contact__role {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--sp-06);
+  flex: 1;
+  line-height: 1.5;
+}
+.contact__email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-05);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  background: var(--layer-01);
+  padding: var(--sp-04) var(--sp-05);
+  margin-bottom: var(--sp-03);
+  border-bottom: 0;
+  transition: background var(--duration-fast) var(--easing),
+              color     var(--duration-fast) var(--easing);
+}
+.section--alt .contact__email { background: var(--layer-01); }
+.contact__email:last-of-type { margin-bottom: 0; }
+.contact__email span { word-break: break-all; }
+.contact__email svg { flex-shrink: 0; transition: transform var(--duration-fast) var(--easing); }
+.contact__email:hover {
+  background: var(--button-primary);
+  color: var(--text-on-color);
+  border-bottom: 0;
+}
+.contact__email:hover svg { transform: translateX(2px); }
+
 .hero__shot {
   margin: 0 calc(var(--grid-pad) * -0.5) 0 0;
   position: relative;

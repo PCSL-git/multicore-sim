@@ -19,8 +19,8 @@ The goal is to shorten simulation time for large power-electronic circuits that,
 
 This repository hosts release builds only.
 For purchase or licensing inquiries, please contact:  
-Shenghui Cui (최성휘) : cuish@snu.ac.kr  
-Jaeyeon Park (박재연) : ok6530@snu.ac.kr, jaeyeonparc@icloud.com
+Shenghui Cui (최성휘) — Associate Professor : cuish@snu.ac.kr  
+Jaeyeon Park (박재연) — Developer / Ph.D Student : ok6530@snu.ac.kr, jaeyeonparc@icloud.com
 
 
 For features, install instructions, and FAQ, see the [project website](https://pcsl-git.github.io/multicore-sim/).
