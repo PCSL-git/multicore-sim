@@ -43,7 +43,7 @@ A C compiler (`gcc`) must be on the host's `PATH` (the simulator JIT-compiles PL
 | OS | Install |
 | --- | --- |
 | macOS | `xcode-select --install` — provides Apple Clang exposed as `gcc`. Or `brew install gcc` for GNU GCC. |
-| Windows | Install [MSYS2](https://www.msys2.org/), open the **MSYS2 MinGW64** shell, run `pacman -S mingw-w64-x86_64-gcc`, then add `C:\msys64\mingw64\bin` to the system `PATH`. (Alternative: [WinLibs](https://winlibs.com/).) |
+| Windows | Install [MSYS2](https://www.msys2.org/), open the **MSYS2 MinGW64** shell, run `pacman -S mingw-w64-x86_64-gcc`, then add `C:\msys64\mingw64\bin` to the system `PATH`. |
 
 Verify with `gcc --version`. See the [website](https://pcsl-git.github.io/multicore-sim/#install) for more details.
 
