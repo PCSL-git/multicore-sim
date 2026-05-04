@@ -33,7 +33,7 @@ Pick the installer for your OS from the [Releases page](https://github.com/PCSL-
 
 | OS | File |
 | --- | --- |
-| macOS (Apple Silicon / Intel) | `.dmg` |
+| macOS (Apple Silicon) | `.dmg` |
 | Windows 10 / 11 (x64) | `.exe` installer |
 
 ### Prerequisite — `gcc`
