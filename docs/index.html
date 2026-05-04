@@ -82,7 +82,7 @@
   </div>
 
   <ol class="tile-grid" start="01">
-    <li class="tile"><span class="tile__num">01</span><h3>Runtime C compile</h3><p>Open a PLECS codegen folder; the simulator builds runtime library for multicore acceleration.</p></li>
+    <li class="tile"><span class="tile__num">01</span><h3>Runtime C compile</h3><p>Open a PLECS codegen directory; the simulator builds runtime library for multicore acceleration.</p></li>
     <li class="tile"><span class="tile__num">02</span><h3>Multicore execution</h3><p>Spread the model across N worker cores. Per-core utilization is plotted so you can see where the load lands.</p></li>
     <li class="tile"><span class="tile__num">03</span><h3>On-the-fly inputs</h3><p>Edit inputs (references, setpoints, load steps) and apply them while the simulation is running, without restarting.</p></li>
     <li class="tile"><span class="tile__num">04</span><h3>Simnote sessions</h3><p>Save layout, signals, axis state, memo, preview, and lossless waveform traces in one <code>.simnote</code> archive. Reload anywhere.</p></li>
@@ -99,7 +99,7 @@
 
   <ol class="steps">
     <li><span class="steps__num">01</span><h3>PLECS exports C</h3><p>PLECS code-generates the circuit model into portable C sources (<code>.c</code> / <code>.h</code>).</p></li>
-    <li><span class="steps__num">02</span><h3>Compile codes</h3><p><code class="brand-mono">multicore_sim</code> invokes <code>gcc</code> to build a shared library directly from the <code>codegen</code> folder, cached per machine.</p></li>
+    <li><span class="steps__num">02</span><h3>Compile codes</h3><p><code class="brand-mono">multicore_sim</code> invokes <code>gcc</code> to build a shared library directly from the <code>codegen</code> directory, cached per machine.</p></li>
     <li><span class="steps__num">03</span><h3>Run across cores</h3><p>In multicore mode, task instances defined in PLECS are assigned to individual cores and execute in sync with one another.</p></li>
     <li><span class="steps__num">04</span><h3>Render to the scope</h3><p>The GUI samples data and plots them. The display refresh rate is independent of simulation speed.</p></li>
   </ol>
@@ -149,7 +149,7 @@
     <h3>Five steps to first plot</h3>
     <ol>
       <li>Launch <code class="brand-mono">multicore_sim</code>.</li>
-      <li><strong>Open Dir…</strong> → select your PLECS codegen folder.</li>
+      <li><strong>Open Dir…</strong> → select your PLECS codegen directory.</li>
       <li>Click <strong>Recompile</strong> if the cached library is missing.</li>
       <li>Tick <strong>Multicore</strong>, then press <code>Play</code> button to start.</li>
       <li>Edit inputs on the right panel.</li>
@@ -186,8 +186,8 @@
       <p>No. The build pipeline expects gcc-style flags. Use MinGW-w64 via MSYS2.</p>
     </details>
     <details>
-      <summary>I moved the codegen folder to another machine and the library won't load.</summary>
-      <p>The C sources from PLECS Coder are themselves portable, but <code class="brand-mono">multicore_sim</code> links them with its own runtime and compiles a shared library (<code>.so</code> / <code>.dylib</code> / <code>.dll</code>) on the host — that build artifact is platform- and machine-specific. So when you move the codegen folder to a different OS, architecture, or even a different host, click <strong>Recompile</strong> so <code class="brand-mono">multicore_sim</code> rebuilds the library against the new machine.</p>
+      <summary>I moved the codegen directory to another machine and the library won't load.</summary>
+      <p>The C sources from PLECS Coder are themselves portable, but <code class="brand-mono">multicore_sim</code> links them with its own runtime and compiles a shared library (<code>.so</code> / <code>.dylib</code> / <code>.dll</code>) on the host — that build artifact is platform- and machine-specific. So when you move the codegen directory to a different OS, architecture, or even a different host, click <strong>Recompile</strong> so <code class="brand-mono">multicore_sim</code> rebuilds the library against the new machine.</p>
     </details>
     <details>
       <summary>Is there a Linux .deb / .rpm?</summary>
@@ -235,7 +235,7 @@
 <section class="cta-band">
   <div>
     <p class="eyebrow eyebrow--inverse">— Get started</p>
-    <h2>Try it on your PLECS codegen folder.</h2>
+    <h2>Try it on your PLECS codegen directory.</h2>
   </div>
   <a class="btn btn--inverse" id="dl-secondary" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
     Download latest
