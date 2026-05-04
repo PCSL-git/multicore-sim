@@ -272,9 +272,9 @@ h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.32px; text-transfor
   margin: 0 auto;
   padding: var(--sp-13) var(--grid-pad) var(--sp-12);
   display: grid;
-  grid-template-columns: minmax(0, 8fr) minmax(0, 7fr);
+  grid-template-columns: minmax(0, 7fr) minmax(0, 9fr);
   gap: var(--gutter);
-  align-items: start;
+  align-items: center;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
 }
@@ -312,13 +312,14 @@ h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.32px; text-transfor
 .meta-note strong { color: var(--text-primary); }
 
 .hero__shot {
-  margin: 0;
+  margin: 0 calc(var(--grid-pad) * -0.5) 0 0;
   position: relative;
 }
 .hero__shot img {
   width: 100%;
   height: auto;
-  border: 1px solid var(--border-subtle);
+  border: 0;
+  display: block;
 }
 .hero__shot figcaption {
   font-family: "IBM Plex Mono", monospace;
@@ -568,8 +569,14 @@ h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.32px; text-transfor
   letter-spacing: 0.32px;
 }
 .os pre {
-  margin-bottom: var(--sp-06);
+  margin-bottom: var(--sp-04);
   font-size: 0.8125rem;
+}
+.os__sub {
+  font-size: 0.8125rem;
+  color: var(--text-helper);
+  margin: 0 0 var(--sp-06);
+  line-height: 1.5;
 }
 .os .btn {
   margin-top: auto;
@@ -772,6 +779,7 @@ h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.32px; text-transfor
     padding: var(--sp-11) var(--grid-pad) var(--sp-10);
     gap: var(--sp-09);
   }
+  .hero__shot { margin-right: 0; }
   .section { padding: var(--sp-11) var(--grid-pad); }
   .ui-shell__nav a { padding: 0 var(--sp-04); }
   .cta-band { grid-template-columns: 1fr; gap: var(--sp-07); }

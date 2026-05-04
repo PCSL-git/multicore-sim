@@ -8,6 +8,10 @@ Multicore simulator for PLECS Codegen simulation.
 
 [**Website**](https://pcsl-git.github.io/multicore-sim/) · [**Download**](https://github.com/PCSL-git/multicore-sim/releases/latest) · [한국어](README_KO.md)
 
+<br/>
+
+<img src="assets/screenshots/multicore.png" alt="multicore_sim — GUI scope" width="900" />
+
 </div>
 
 multicore_sim is an offline simulator that runs PLECS code-generated circuits across multiple desktop CPU cores.
@@ -32,7 +36,16 @@ Pick the installer for your OS from the [Releases page](https://github.com/PCSL-
 | macOS (Apple Silicon / Intel) | `.dmg` |
 | Windows 10 / 11 (x64) | `.exe` installer |
 
-A C compiler (`gcc`) must be installed on the host. See the [website](https://pcsl-git.github.io/multicore-sim/#install) for details.
+### Prerequisite — `gcc`
+
+A C compiler (`gcc`) must be on the host's `PATH` (the simulator JIT-compiles PLECS-generated C at runtime).
+
+| OS | Install |
+| --- | --- |
+| macOS | `xcode-select --install` — provides Apple Clang exposed as `gcc`. Or `brew install gcc` for GNU GCC. |
+| Windows | Install [MSYS2](https://www.msys2.org/), open the **MSYS2 MinGW64** shell, run `pacman -S mingw-w64-x86_64-gcc`, then add `C:\msys64\mingw64\bin` to the system `PATH`. (Alternative: [WinLibs](https://winlibs.com/).) |
+
+Verify with `gcc --version`. See the [website](https://pcsl-git.github.io/multicore-sim/#install) for more details.
 
 ## License
 

@@ -47,8 +47,7 @@
     <p class="lead">Compile PLECS-generated C at runtime. Distribute the model across CPU cores. Inspect waveforms in a built-in GUI scope — with signal triggers and capture.</p>
     <div class="cta">
       <a class="btn btn--primary" id="dl-primary" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
-        Download latest
-        <span class="btn__badge" id="dl-version">latest</span>
+        Download
         <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
       </a>
       <a class="btn btn--ghost" href="#install">
@@ -62,8 +61,8 @@
   </div>
 
   <figure class="hero__shot">
-    <img src="assets/screenshots/scope.svg" alt="multicore_sim GUI scope" />
-    <figcaption>fig.&nbsp;01 &nbsp;·&nbsp; GUI scope · placeholder · actual screenshot coming.</figcaption>
+    <img src="assets/screenshots/multicore.png" alt="multicore_sim GUI scope" />
+    <figcaption>fig.&nbsp;01 &nbsp;·&nbsp; GUI scope for multicore simulation</figcaption>
   </figure>
 </section>
 
@@ -111,8 +110,9 @@
     <article class="os">
       <h3>macOS</h3>
       <p class="os__desc">Apple Silicon &amp; Intel · self-signed <code>.dmg</code>.</p>
-      <p class="os__hint">Install Apple Clang (exposed as <code>gcc</code>):</p>
+      <p class="os__hint">Install gcc — Xcode Command Line Tools (Apple Clang exposed as <code>gcc</code>):</p>
       <pre><code>xcode-select --install</code></pre>
+      <p class="os__sub">Or install GNU GCC via <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a>: <code>brew install gcc</code>. Verify with <code>gcc --version</code>.</p>
       <a class="btn btn--primary btn--block" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
         Download .dmg
         <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
@@ -123,8 +123,9 @@
     <article class="os">
       <h3>Windows</h3>
       <p class="os__desc">Windows 10 / 11 · Inno Setup installer.</p>
-      <p class="os__hint">Install MSYS2, then MinGW-w64 gcc:</p>
+      <p class="os__hint">Install gcc — <a href="https://www.msys2.org/" target="_blank" rel="noopener">MSYS2</a> + MinGW-w64. In the <strong>MSYS2 MinGW64</strong> shell:</p>
       <pre><code>pacman -S mingw-w64-x86_64-gcc</code></pre>
+      <p class="os__sub">Then add <code>C:\msys64\mingw64\bin</code> to the system <code>PATH</code> and verify with <code>gcc --version</code>. Alternative: <a href="https://winlibs.com/" target="_blank" rel="noopener">WinLibs</a>. MSVC (<code>cl.exe</code>) is not supported.</p>
       <a class="btn btn--primary btn--block" href="https://github.com/PCSL-git/multicore-sim/releases/latest" target="_blank" rel="noopener">
         Download .exe
         <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18 6l-1.43 1.39L24.15 15H4v2h20.15l-7.58 7.57L18 26l10-10z"/></svg>
