@@ -1,0 +1,88 @@
+# ─────────────────────────────────────────────────
+# macOS
+# ─────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ─────────────────────────────────────────────────
+# Windows
+# ─────────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# ─────────────────────────────────────────────────
+# Linux
+# ─────────────────────────────────────────────────
+*~
+.fuse_hidden*
+.Trash-*
+.directory
+.nfs*
+
+# ─────────────────────────────────────────────────
+# Editors / IDEs
+# ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.settings/
+.history/
+*.sublime-project
+*.sublime-workspace
+.netrwhist
+
+# ─────────────────────────────────────────────────
+# Logs / temp / build
+# ─────────────────────────────────────────────────
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# ─────────────────────────────────────────────────
+# Node / web tooling (if ever added)
+# ─────────────────────────────────────────────────
+node_modules/
+.cache/
+.npm
+.parcel-cache/
+.yarn/
+dist/
+.next/
+.nuxt/
+
+# ─────────────────────────────────────────────────
+# Local environment / secrets
+# ─────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
